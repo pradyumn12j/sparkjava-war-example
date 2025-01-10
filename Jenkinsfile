@@ -14,7 +14,7 @@ pipeline
         {
             steps { sshagent (credentials: ['test']) 
      {
-      sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/hey\ there/target/sparkjava-hello-world-1.0.war ec2-user@172.31.28.105:/usr/share/tomcat/webapps'
+      sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/hello/target/sparkjava-hello-world-1.0.war ec2-user@172.31.28.105:/usr/share/tomcat/webapps'
     } }}
 }
 }
